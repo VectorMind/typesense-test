@@ -1,24 +1,20 @@
 import { useState, useEffect } from 'react';
 
+const fetchData = async (setData) => {
+    try {
+      const response = await fetch('http://localhost:3001/api/test');
+      const data = await response.json();
+      setData(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+};
+
 const InstantSearch = () => {
-
     const [fetchedData, setFetchedData] = useState(null);
-
-
     useEffect(() => {
-        async function fetchData() {
-          try {
-            const response = await fetch('http://localhost:3001/api/test');
-            const data = await response.json();
-            setFetchedData(data);
-          } catch (error) {
-            console.error('Error fetching data:', error);
-          }
-        }
-    
-        fetchData();
+        fetchData(setFetchedData);
       }, []);
-
 
     return (
       <div>
