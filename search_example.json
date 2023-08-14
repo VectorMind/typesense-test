@@ -1,0 +1,54 @@
+{
+    "facet_counts": [],
+    "found": 1,
+    "hits": [
+        {
+            "document": {
+                "authors": [
+                    "Suzanne Collins"
+                ],
+                "average_rating": 4.34,
+                "id": "1",
+                "image_url": "https://images.gr-assets.com/books/1447303603m/2767052.jpg",
+                "original_publication_year": 2008,
+                "publication_year": 2008,
+                "ratings_count": 4780653,
+                "title": "The Hunger Games"
+            },
+            "highlight": {
+                "title": {
+                    "matched_tokens": [
+                        "Hunger"
+                    ],
+                    "snippet": "The <mark>Hunger</mark> Games"
+                }
+            },
+            "highlights": [
+                {
+                    "field": "title",
+                    "matched_tokens": [
+                        "Hunger"
+                    ],
+                    "snippet": "The <mark>Hunger</mark> Games"
+                }
+            ],
+            "text_match": 578730123365187705,
+            "text_match_info": {
+                "best_field_score": "1108091338752",
+                "best_field_weight": 15,
+                "fields_matched": 1,
+                "score": "578730123365187705",
+                "tokens_matched": 1
+            }
+        }
+    ],
+    "out_of": 2,
+    "page": 1,
+    "request_params": {
+        "collection_name": "books",
+        "per_page": 10,
+        "q": "hunger"
+    },
+    "search_cutoff": false,
+    "search_time_ms": 2
+}

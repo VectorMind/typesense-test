@@ -8,7 +8,7 @@ client = typesense.Client({
   'api_key': os.getenv('TYPESENSE_API_KEY'),
   'nodes': [{
     'host': os.getenv('HOST'),
-    'port': os.getenv('PORT'),
+    'port': os.getenv('TYPESENSE_PORT'),
     'protocol': 'https' if (os.getenv('USE_HTTPS')=='true') else 'http'
   }],
   'connection_timeout_seconds': 2

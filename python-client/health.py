@@ -10,7 +10,7 @@ if(api_key is None):
     exit(0)
 
 host = os.getenv('HOST')
-port = os.getenv('PORT')
+port = os.getenv('TYPESENSE_PORT')
 protocol = 'https' if (os.getenv('USE_HTTPS')=='true') else 'http'
 
 print(f"connecting typesense client to {protocol}://{host}:{port}")

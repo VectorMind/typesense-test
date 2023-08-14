@@ -1,2 +1,0 @@
-typesnse==0.16.0
-python-dotenv

@@ -1,0 +1,4 @@
+venv
+.env
+typesense-data
+result.json
