@@ -5,9 +5,7 @@ function App() {
   return (
     <div className='App'>
       <header className='Header'>
-        <p>
-          Typesense react client
-        </p>
+        <h1>Typesense react client</h1>
       </header>
       <InstantSearch/>
     </div>

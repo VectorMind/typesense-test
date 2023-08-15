@@ -16,8 +16,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(typesenseRouter)
-//console.log(`* serving ${abs_oudir}`)
-//app.use(express.static(abs_oudir))
+if(process.env.SERVER_STATIC == "true"){
+    console.log(`* serving ${abs_oudir}`)
+    app.use(express.static(abs_oudir))
+}
 app.use((req, res, next) => {
     res.status(404).send("Sorry can't find that!")
 })

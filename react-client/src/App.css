@@ -12,4 +12,9 @@ body{
   margin: 0;
   padding: 0;
   text-align: center;
+  background-color: rgb(111, 154, 199);
+}
+
+h1{
+  padding:20px;
 }

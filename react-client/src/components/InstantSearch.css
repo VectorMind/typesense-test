@@ -1,0 +1,30 @@
+.search-box{
+    display: flex;
+    flex-direction: column;
+}
+.search-container{
+    display: flex;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.search-input{
+    flex-grow: 1;
+    margin-left: 10px;
+    padding: 8px;
+    border:0px;
+    font-size: 16px;
+    caret-color: rgb(111, 154, 199);
+    width:60vw;
+}
+.search-input:focus {
+    outline: none;
+}
+.search-icon{
+    scale: 60%;
+}
+
+.search-hits{
+    margin: auto;
+}
