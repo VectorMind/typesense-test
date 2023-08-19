@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "original_publication_year": 2008,
+        "authors": ["Suzanne Collins"],
+        "average_rating": 4.34,
+        "publication_year": 2008, "title": "The Hunger Games",
+        "image_url": "https://images.gr-assets.com/books/1447303603m/2767052.jpg",
+        "ratings_count": 4780653
+    },
+    {
+        "id": "2",
+        "title": "Test example",
+        "ratings_count": 512
+    }
+]

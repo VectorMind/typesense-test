@@ -27,4 +27,12 @@
 
 .search-hits{
     margin: auto;
+    padding:20px;
+}
+.search-result{
+    padding-top:10px;
+}
+
+.search-description{
+    max-width: 80vw;
 }

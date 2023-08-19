@@ -30,8 +30,8 @@ const search = async (req,res)=>{
         const searchParameters = {
             'q'         : req.body.q,
             'query_by'  : 'title,authors',
-            'filter_by' : 'ratings_count:>100',
-            'sort_by'   : 'ratings_count:desc'
+            'filter_by' : 'pageCount:>100',
+            'sort_by'   : 'pageCount:desc'
             }
         const searchResult = await typesenseClient.collections('books').documents().search(searchParameters);
         res.json(searchResult);
