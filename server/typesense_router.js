@@ -29,7 +29,7 @@ const search = async (req,res)=>{
     try {
         const searchParameters = {
             'q'         : req.body.q,
-            'query_by'  : 'title',
+            'query_by'  : 'title,authors',
             'filter_by' : 'ratings_count:>100',
             'sort_by'   : 'ratings_count:desc'
             }

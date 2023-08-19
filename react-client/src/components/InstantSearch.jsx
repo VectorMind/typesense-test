@@ -17,6 +17,35 @@ const fetchData = async (setData, searchText) => {
     }
 };
 
+const HighlightTitle = ({hit}) => {
+  if((hit.highlights.length > 0)&&(hit.highlight.title)){
+    return (
+      <h3 dangerouslySetInnerHTML={{__html: hit.highlight.title.snippet}}></h3>
+    )  
+  }
+  else{
+    return (<h3>{hit.document.title}</h3>)
+  }
+}
+
+const HighlightAuthors = ({hit}) => {
+  if((hit.highlights.length > 0)&&(hit.highlight.authors)){
+    const authors_snippets = hit.highlight.authors.map(author => author.snippet)
+    const authors_html_string = `Authors: ${authors_snippets.join(', ')}`
+    return (<p dangerouslySetInnerHTML={{
+      __html: authors_html_string
+    }}></p>)
+  }
+  else if(hit.document.authors){
+    return (
+      <p>Authors: {hit.document.authors?.join(', ')}</p>
+    )  
+  }
+  else{
+    return (<p>Authors: - </p>)
+  }
+}
+
 const InstantSearch = () => {
     const [searchResults, setsearchResults] = useState(null);
     const handleChange = (event) => {
@@ -42,8 +71,8 @@ const InstantSearch = () => {
               searchResults.hits.map(hit => (
                 <div key={hit.document.id} className="search-result">
                   <img src={hit.document.image_url} alt={hit.document.title} />
-                  <h3>{hit.highlight.title.snippet}</h3>
-                  <p>Author: {hit.document.authors?.join(', ')}</p>
+                  <HighlightTitle hit={hit} />
+                  <HighlightAuthors hit={hit} />
                   <p>Year: {hit.document.original_publication_year}</p>
                   <p>Average Rating: {hit.document.average_rating}</p>
                 </div>
