@@ -1,13 +1,25 @@
-import { useState} from 'react';
+import * as React from 'react';
+import { useState, useEffect} from 'react';
 import './InstantSearch.css'
+import Pagination from '@mui/material/Pagination';
 
-const fetchData = async (setData, searchText) => {
-  console.log(searchText)
+const per_page = 5
+
+const fetchData = async (setData, q,page) => {
+  console.log(q)
+  const searchParameters = {
+    q:q,
+    query_by  : 'title,authors',
+    query_by_weights: '3,1',
+    infix     : 'always',
+    page: page,
+    per_page: per_page
+    }
     try {
       const response = await fetch('http://localhost:3000/search',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({q:searchText})
+            body: JSON.stringify({searchParameters:searchParameters})
         });
       const data = await response.json();
       console.log(data)
@@ -47,12 +59,29 @@ const Authors = ({hit}) => {
 }
 
 const InstantSearch = () => {
-    const [searchResults, setsearchResults] = useState(null);
+  const [query, setQuery] = useState('');
+  const [searchResults, setsearchResults] = useState(null);
+  const [nbPages, setNbPages] = useState(0);
+    const [page, setPage] = useState(1);
+
     const handleChange = (event) => {
-      console.log("handleChange")
-        fetchData(setsearchResults,event.target.value);
+        console.log("handleChange")
+        setQuery(event.target.value)
+        setPage(1)
+        fetchData(setsearchResults,event.target.value,page);
       };
 
+      const handleChangePage = (event, newPage) => {
+        setPage(newPage);
+        fetchData(setsearchResults,query,newPage);
+      };
+    
+      useEffect(() => {
+        if (searchResults) {
+            const newNbPages = Math.ceil(searchResults.found / per_page);
+            setNbPages(newNbPages);
+        }
+    }, [searchResults]);
     return (
       <>
         <div className='search-box'>
@@ -65,6 +94,20 @@ const InstantSearch = () => {
               <object data="search.drawio.svg"/>
           </div>
           </div>
+          {searchResults &&
+            <div className='search-stats'>
+              <div className='search-found'>
+              found {searchResults.found}
+              </div>
+              <div className='search-pagination'>
+                {(nbPages > 1) && <Pagination 
+                  count={nbPages}
+                  page={page}
+                  onChange={handleChangePage}
+                />}
+              </div>
+            </div>
+            }
           <div className='search-hits' >
             {searchResults &&
             (searchResults.found >0) && 

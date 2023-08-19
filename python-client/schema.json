@@ -1,14 +1,14 @@
 {
     "name": "books",
     "fields": [
-        {"name": "title", "type": "string"},
+        {"name": "title", "type": "string", "infix": true},
         {"name": "isbn", "type": "string"},
         {"name": "pageCount", "type": "int32"},
         {"name": "thumbnailUrl", "type": "string", "optional":true},
         {"name": "shortDescription", "type": "string", "optional":true},
         {"name": "longDescription", "type": "string", "optional":true},
         {"name": "status", "type": "string"},
-        {"name": "authors", "type": "string[]", "facet": true},
+        {"name": "authors", "type": "string[]", "facet": true, "infix": true},
         {"name": "categories", "type": "string[]", "facet": true}
     ],
     "default_sorting_field": "pageCount"

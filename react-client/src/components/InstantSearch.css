@@ -24,10 +24,17 @@
 .search-icon{
     scale: 60%;
 }
-
+.search-stats{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color:rgb(111, 154, 199);
+    border-radius: 8px;
+}
 .search-hits{
     margin: auto;
-    padding:20px;
 }
 .search-result{
     padding-top:10px;

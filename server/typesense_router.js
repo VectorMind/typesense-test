@@ -27,13 +27,7 @@ const typesenseClient = new Client({
 
 const search = async (req,res)=>{
     try {
-        const searchParameters = {
-            'q'         : req.body.q,
-            'query_by'  : 'title,authors',
-            'filter_by' : 'pageCount:>100',
-            'sort_by'   : 'pageCount:desc'
-            }
-        const searchResult = await typesenseClient.collections('books').documents().search(searchParameters);
+        const searchResult = await typesenseClient.collections('books').documents().search(req.body.searchParameters);
         res.json(searchResult);
     } catch (error) {
         console.error(error);
