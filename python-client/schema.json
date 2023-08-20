@@ -7,7 +7,7 @@
         {"name": "thumbnailUrl", "type": "string", "optional":true},
         {"name": "shortDescription", "type": "string", "optional":true},
         {"name": "longDescription", "type": "string", "optional":true},
-        {"name": "status", "type": "string"},
+        {"name": "status", "type": "string", "facet": true},
         {"name": "authors", "type": "string[]", "facet": true, "infix": true},
         {"name": "categories", "type": "string[]", "facet": true}
     ],

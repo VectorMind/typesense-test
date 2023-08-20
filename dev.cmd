@@ -1,2 +1,2 @@
 cd react-client
-npr run start
+npm run start
