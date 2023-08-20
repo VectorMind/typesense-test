@@ -52,13 +52,13 @@ const SearchBar = ({textChange}) => {
 
   return(
     <div className='search-bar'>
-    <input className="search-input" autoFocus
-            type="text"
-            onChange={(e) => textChange(e)}
-    />
-    <div className='search-icon' >
-      <object data="search.drawio.svg" aria-label="search.drawio.svg"/>
-    </div>
+      <input className="search-input" autoFocus
+              type="text"
+              onChange={(e) => textChange(e)}
+      />
+      <div className='search-icon' >
+        <object data="search.drawio.svg" aria-label="search.drawio.svg"/>
+      </div>
   </div>
   )
 }
@@ -132,7 +132,7 @@ const SearchStats = ({searchResults,page,nbPages,handleChangePage}) => {
       {searchResults &&
         <div className='search-stats'>
           <div className='search-found'>
-          found {searchResults.found}
+          found {searchResults.found} documents in {searchResults.search_time_ms} ms
           </div>
           <div className='search-pagination'>
             {(nbPages > 1) && <Pagination 
@@ -214,13 +214,14 @@ const InstantSearch = () => {
     setFilterMap(newFilterMap)
     fetchData(setsearchResults,query,page,newFilterMap);
   }
-  
+
   useEffect(() => {
     if (searchResults) {
         const newNbPages = Math.ceil(searchResults.found / per_page);
         setNbPages(newNbPages);
     }
   }, [searchResults]);
+
   return (
     <div className='search-container'>
       <SearchBar textChange={textChange} />
