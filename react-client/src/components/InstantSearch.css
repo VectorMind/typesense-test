@@ -1,8 +1,9 @@
-.search-box{
+.search-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
-.search-container{
+.search-bar{
     display: flex;
     background-color: white;
     margin: auto;
@@ -24,6 +25,47 @@
 .search-icon{
     scale: 60%;
 }
+
+.search-description{
+    max-width: 80vw;
+}
+
+mark{
+    background-color: rgb(159, 183, 209);
+    border-bottom: 0.2rem solid #FFCF00;
+}
+
+.search-results{
+    display:flex;
+    flex-direction: row;
+}
+
+.search-facets{
+    margin:5px;
+    max-width: 30vw;
+}
+.search-one-facet{
+    padding:3px;
+    display: flex;
+    flex-direction: column;
+}
+.search-facet-field{
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.facet-field-count{
+    margin-left: 2px;
+    padding:3px;
+    background-color: rgb(111, 154, 199);
+    border-radius: 4px;
+}
+
+.search-results-body{
+    display: flex;
+    flex-direction: column;
+}
 .search-stats{
     display: flex;
     align-items: center;
@@ -36,10 +78,7 @@
 .search-hits{
     margin: auto;
 }
-.search-result{
-    padding-top:10px;
-}
 
-.search-description{
-    max-width: 80vw;
+.search-document{
+    padding-top:10px;
 }

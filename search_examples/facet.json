@@ -1,0 +1,417 @@
+{
+    "facet_counts": [
+        {
+            "counts": [
+                {
+                    "count": 6,
+                    "highlighted": "Python",
+                    "value": "Python"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Programming",
+                    "value": "Programming"
+                }
+            ],
+            "field_name": "categories",
+            "stats": {
+                "total_values": 2
+            }
+        },
+        {
+            "counts": [
+                {
+                    "count": 1,
+                    "highlighted": "Robin Dunn",
+                    "value": "Robin Dunn"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Noel Rappin",
+                    "value": "Noel Rappin"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Daryl Harms",
+                    "value": "Daryl Harms"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Carter Sande",
+                    "value": "Carter Sande"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Chris Garrard",
+                    "value": "Chris Garrard"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Naomi R. Ceder",
+                    "value": "Naomi R. Ceder"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Anthony Briggs",
+                    "value": "Anthony Briggs"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Warren D. Sande",
+                    "value": "Warren D. Sande"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "John E. Grayson",
+                    "value": "John E. Grayson"
+                },
+                {
+                    "count": 1,
+                    "highlighted": "Kenneth McDonald",
+                    "value": "Kenneth McDonald"
+                }
+            ],
+            "field_name": "authors",
+            "stats": {
+                "total_values": 10
+            }
+        }
+    ],
+    "found": 7,
+    "hits": [
+        {
+            "document": {
+                "authors": [
+                    "John E. Grayson"
+                ],
+                "categories": [
+                    "Python"
+                ],
+                "id": "80",
+                "isbn": "1884777813",
+                "longDescription": "If you are interested in Python and Tkinter, you have probably noticed that although there is some good contributed documentation on the Web, there is not enough to get Tkinter applications up and running. Python and Tkinter Programming is the answer. It is designed for readers who are familiar with Python and who need to develop applications with Graphical User Interfaces (GUIs).    Python and Tkinter Programming presents the elements of typical Python and Tkinter applications in a straight-forward fashion. Sample code illustrates each element. Complete applications that go far beyond the fill-the-form class of graphical user interfaces are presented; here you will find examples of complex controls, drawn interfaces and photorealistic panels. The code can readily be used as templates for new applications. Extensions to Python (such as ODBC) are examined as well. Complete source code for all examples, along with the latest releases of required software, will be available from Manning's web site.    Tkinter is fully documented. To date, this level of documentation has not been available to Tkinter programmers, who have been required to read the code or interpret Tcl/Tk man pages to fully understand component usage.    Python and Tkinter Programming will be useful in both Windows and Unix environments, and the example code is portable between the two environments.",
+                "pageCount": 688,
+                "status": "PUBLISH",
+                "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/grayson.jpg",
+                "title": "Python and Tkinter Programming"
+            },
+            "highlight": {
+                "categories": [
+                    {
+                        "matched_tokens": [
+                            "Python"
+                        ],
+                        "snippet": "<mark>Python</mark>"
+                    }
+                ],
+                "title": {
+                    "matched_tokens": [
+                        "Python"
+                    ],
+                    "snippet": "<mark>Python</mark> and Tkinter Programming"
+                }
+            },
+            "highlights": [
+                {
+                    "field": "title",
+                    "matched_tokens": [
+                        "Python"
+                    ],
+                    "snippet": "<mark>Python</mark> and Tkinter Programming"
+                },
+                {
+                    "field": "categories",
+                    "indices": [
+                        0
+                    ],
+                    "matched_tokens": [
+                        [
+                            "Python"
+                        ]
+                    ],
+                    "snippets": [
+                        "<mark>Python</mark>"
+                    ]
+                }
+            ],
+            "text_match": 578730123365711900,
+            "text_match_info": {
+                "best_field_score": "1108091339008",
+                "best_field_weight": 4,
+                "fields_matched": 2,
+                "score": "578730123365711906",
+                "tokens_matched": 1
+            }
+        },
+        {
+            "document": {
+                "authors": [
+                    "Daryl Harms",
+                    "Kenneth McDonald"
+                ],
+                "categories": [
+                    "Python"
+                ],
+                "id": "86",
+                "isbn": "1884777740",
+                "longDescription": "The Quick Python Book is a clear, concise introduction to Python, one of the most elegant programming languages in existence. The book is aimed at readers who know programming but for whom the Python language is new.  This book is designed so that you can use it to quickly become proficient in Python. However, it provides more than just a beginners tutorial. Even once you've become more experienced, it should continue to be quite valuable to you as an indexed cache of information on the bulk of the Python concepts and constructs of which you will find yourself wanting to refresh or augment your knowledge.    It first covers the core features of Python (syntax, control flow, basic data structures, etc.) and provides the knowledge to write basic but useful scripts. Features in Python common to other languages are covered very concisely, while features unique to Python are explained in detail.    It next discusses Python features which would be useful to anyone using Python in larger applications, including facilities for managing large collections of code, object-oriented programming, advanced string handling, etc.    The last section of the book discusses advanced topics: Windows/COM programming with Python, integrating Python and Java (Python is one of the few languages other than Java which can be compiled into Java bytecode), extending the Python language with C, and an introduction to some of the advanced web site building tools that are available for Python.",
+                "pageCount": 444,
+                "status": "PUBLISH",
+                "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/harms.jpg",
+                "title": "The Quick Python Book"
+            },
+            "highlight": {
+                "categories": [
+                    {
+                        "matched_tokens": [
+                            "Python"
+                        ],
+                        "snippet": "<mark>Python</mark>"
+                    }
+                ],
+                "title": {
+                    "matched_tokens": [
+                        "Python"
+                    ],
+                    "snippet": "The Quick <mark>Python</mark> Book"
+                }
+            },
+            "highlights": [
+                {
+                    "field": "title",
+                    "matched_tokens": [
+                        "Python"
+                    ],
+                    "snippet": "The Quick <mark>Python</mark> Book"
+                },
+                {
+                    "field": "categories",
+                    "indices": [
+                        0
+                    ],
+                    "matched_tokens": [
+                        [
+                            "Python"
+                        ]
+                    ],
+                    "snippets": [
+                        "<mark>Python</mark>"
+                    ]
+                }
+            ],
+            "text_match": 578730123365711900,
+            "text_match_info": {
+                "best_field_score": "1108091339008",
+                "best_field_weight": 4,
+                "fields_matched": 2,
+                "score": "578730123365711906",
+                "tokens_matched": 1
+            }
+        },
+        {
+            "document": {
+                "authors": [
+                    "Naomi R. Ceder"
+                ],
+                "categories": [
+                    "Python"
+                ],
+                "id": "40",
+                "isbn": "193518220X",
+                "longDescription": "This revision of Manning's popular The Quick Python Book offers a clear, crisp introduction to the elegant Python programming language and its famously easy-to-read syntax. Written for programmers new to Python, this updated edition covers features common to other languages concisely, while introducing Python's comprehensive standard functions library and unique features in detail.    After exploring Python's syntax, control flow, and basic data structures, the book shows how to create, test, and deploy full applications and larger code libraries. It addresses established Python features as well as the advanced object-oriented options available in Python 3. Along the way, you'll survey the current Python development landscape, including GUI programming, testing, database access, and web frameworks.    WHAT'S INSIDE:        * Concepts and Python 3 features      * Regular expressions and testing      * Python tools      * All the Python you need   nothing you don't",
+                "pageCount": 360,
+                "shortDescription": "This revision of Manning's popular The Quick Python Book offers a clear, crisp introduction to the elegant Python programming language and its famously easy-to-read syntax. Written for programmers new to Python, this updated edition covers features common to other languages concisely, while introducing Python's comprehensive standard functions library and unique features in detail.",
+                "status": "PUBLISH",
+                "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ceder.jpg",
+                "title": "The Quick Python Book, Second Edition"
+            },
+            "highlight": {
+                "categories": [
+                    {
+                        "matched_tokens": [
+                            "Python"
+                        ],
+                        "snippet": "<mark>Python</mark>"
+                    }
+                ],
+                "title": {
+                    "matched_tokens": [
+                        "Python"
+                    ],
+                    "snippet": "The Quick <mark>Python</mark> Book, Second Edition"
+                }
+            },
+            "highlights": [
+                {
+                    "field": "title",
+                    "matched_tokens": [
+                        "Python"
+                    ],
+                    "snippet": "The Quick <mark>Python</mark> Book, Second Edition"
+                },
+                {
+                    "field": "categories",
+                    "indices": [
+                        0
+                    ],
+                    "matched_tokens": [
+                        [
+                            "Python"
+                        ]
+                    ],
+                    "snippets": [
+                        "<mark>Python</mark>"
+                    ]
+                }
+            ],
+            "text_match": 578730123365711900,
+            "text_match_info": {
+                "best_field_score": "1108091339008",
+                "best_field_weight": 4,
+                "fields_matched": 2,
+                "score": "578730123365711906",
+                "tokens_matched": 1
+            }
+        },
+        {
+            "document": {
+                "authors": [
+                    "Anthony Briggs"
+                ],
+                "categories": [
+                    "Python"
+                ],
+                "id": "33",
+                "isbn": "1935182080",
+                "longDescription": "Learn Python the fast and fun way! Hello! Python is a fully-illustrated, project-driven tutorial designed to get you up and running with Python, no experience required. It's full of projects that help you learn the way most programmers do   one step at a time, starting with the basics, and then applying your new skills in useful programs.    Hello! Python fully covers the building blocks of Python programming and gives you a gentle introduction to more advanced topics such as object oriented programming, functional programming, network programming, and program design. New (or nearly new) programmers will learn most of what they need to know to start using Python immediately.    The book presents several practical projects, including games, business, and graphical applications. Each example provides a solid base for you to develop your own programs. As you dig into Python, you'll see how programs are created, and the reasons behind the technical decisions.    The book covers Python's large standard library gradually and in the context of sample apps, so the reader isn't overwhelmed with a large number of library functions to absorb all at once. Upon completing the book, the reader will have a good grasp of Python, know several technologies and libraries related to Python and be able to identify many resources for future growth as a programmer.",
+                "pageCount": 350,
+                "shortDescription": "Hello! Python fully covers the building blocks of Python programming and gives you a gentle introduction to more advanced topics such as object oriented programming, functional programming, network programming, and program design. New (or nearly new) programmers will learn most of what they need to know to start using Python immediately.",
+                "status": "PUBLISH",
+                "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/briggs.jpg",
+                "title": "Hello! Python"
+            },
+            "highlight": {
+                "categories": [
+                    {
+                        "matched_tokens": [
+                            "Python"
+                        ],
+                        "snippet": "<mark>Python</mark>"
+                    }
+                ],
+                "title": {
+                    "matched_tokens": [
+                        "Python"
+                    ],
+                    "snippet": "Hello! <mark>Python</mark>"
+                }
+            },
+            "highlights": [
+                {
+                    "field": "title",
+                    "matched_tokens": [
+                        "Python"
+                    ],
+                    "snippet": "Hello! <mark>Python</mark>"
+                },
+                {
+                    "field": "categories",
+                    "indices": [
+                        0
+                    ],
+                    "matched_tokens": [
+                        [
+                            "Python"
+                        ]
+                    ],
+                    "snippets": [
+                        "<mark>Python</mark>"
+                    ]
+                }
+            ],
+            "text_match": 578730123365711900,
+            "text_match_info": {
+                "best_field_score": "1108091339008",
+                "best_field_weight": 4,
+                "fields_matched": 2,
+                "score": "578730123365711906",
+                "tokens_matched": 1
+            }
+        },
+        {
+            "document": {
+                "authors": [
+                    "Noel Rappin",
+                    "Robin Dunn"
+                ],
+                "categories": [
+                    "Python"
+                ],
+                "id": "204",
+                "isbn": "1932394621",
+                "longDescription": "wxPython is an open source GUI toolkit for the Python programming language. It offers productivity gains and useful features for any programmer, and is quickly gaining in popularity as a result. The only published source for the wxPython toolkit, co-authored by the toolkit s developer Robin Dunn, wxPython in Action shows readers why wxPython is a better interface tool than Tkinter, the tool that is distributed with Python.    Because they are often large and complex, GUI programming toolkits can be hard to use. wxPython is a combination of the Python programming language and the wxWidgets toolkit, which allows programmers to create programs with a robust, highly functional graphical user interface, simply and easily. wxPython combines the power of an exceptionally complete user interface toolkit with an exceptionally flexible programming language. The result is a toolkit that is unique in the ease with which complex applications can be built and maintained.    wxPython in Action is a complete guide to the wxPython toolkit, containing a tutorial for getting started, a guide to best practices, and a reference to wxPython s extensive widget set. After an easy introduction to wxPython concepts and programming practices, the book takes an in-depth tour of when and how to use the bountiful collection of widgets offered by wxPython. All features are illustrated with useful code examples and reference tables are included for handy lookup of an object s properties, methods, and events. The book enables developers to learn wxPython quickly and remains a valuable resource for future work.",
+                "pageCount": 620,
+                "shortDescription": "\"The book is easy to read and provides an approach to a very practical contemporary topic. The authors have organized their material well.\" -- Melissa Strange, Walden University, www.reviews.com",
+                "status": "PUBLISH",
+                "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/rappin.jpg",
+                "title": "wxPython in Action"
+            },
+            "highlight": {
+                "categories": [
+                    {
+                        "matched_tokens": [
+                            "Python"
+                        ],
+                        "snippet": "<mark>Python</mark>"
+                    }
+                ],
+                "title": {
+                    "matched_tokens": [
+                        "wxPython"
+                    ],
+                    "snippet": "<mark>wxPython</mark> in Action"
+                }
+            },
+            "highlights": [
+                {
+                    "field": "title",
+                    "matched_tokens": [
+                        "wxPython"
+                    ],
+                    "snippet": "<mark>wxPython</mark> in Action"
+                },
+                {
+                    "field": "categories",
+                    "indices": [
+                        0
+                    ],
+                    "matched_tokens": [
+                        [
+                            "Python"
+                        ]
+                    ],
+                    "snippets": [
+                        "<mark>Python</mark>"
+                    ]
+                }
+            ],
+            "text_match": 578730123365711900,
+            "text_match_info": {
+                "best_field_score": "1108091339008",
+                "best_field_weight": 4,
+                "fields_matched": 1,
+                "score": "578730123365711905",
+                "tokens_matched": 1
+            }
+        }
+    ],
+    "out_of": 392,
+    "page": 1,
+    "request_params": {
+        "collection_name": "books",
+        "per_page": 5,
+        "q": "python"
+    },
+    "search_cutoff": false,
+    "search_time_ms": 1
+}
