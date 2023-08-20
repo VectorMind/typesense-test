@@ -214,6 +214,10 @@ const InstantSearch = () => {
     setFilterMap(newFilterMap)
     fetchData(setsearchResults,query,page,newFilterMap);
   }
+  
+  useEffect(() => {
+    fetchData(setsearchResults,'',1,{});
+  }, []);
 
   useEffect(() => {
     if (searchResults) {
