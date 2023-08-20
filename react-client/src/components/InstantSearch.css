@@ -26,10 +26,6 @@
     scale: 60%;
 }
 
-.search-description{
-    max-width: 80vw;
-}
-
 mark{
     background-color: rgb(159, 183, 209);
     border-bottom: 0.2rem solid #FFCF00;
@@ -58,7 +54,7 @@ mark{
 .facet-field-count{
     margin-left: 2px;
     padding:3px;
-    background-color: rgb(111, 154, 199);
+    background-color: rgb(135, 170, 207);
     border-radius: 4px;
 }
 
@@ -71,14 +67,24 @@ mark{
     align-items: center;
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
-    background-color:rgb(111, 154, 199);
+    background-color:rgb(135, 170, 207);
     border-radius: 8px;
 }
 .search-hits{
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .search-document{
-    padding-top:10px;
+    padding:10px;
+    background-color:rgb(135, 170, 207);
+    border-radius: 8px;
+    box-shadow: 2px 4px 9px 0px rgb(77, 101, 127);
+    width: 60vw;
+    min-width: 400px;
+    max-width: 800px;
 }

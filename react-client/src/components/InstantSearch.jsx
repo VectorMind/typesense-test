@@ -185,7 +185,6 @@ const InstantSearch = () => {
                         <p className='search-description'>Description: {hit.document.shortDescription}</p>
                         }
                         <Categories hit={hit} />
-                        <hr/>
                       </div>
                     ))}
                 </div>
