@@ -1,5 +1,5 @@
 # typesense-test
-simple usage of typesense container and client
+a react search client protected behind an express auth proxy. This way, you don't leak the key and only auth users can search.
 
 ## Faceting
 - https://typesense.org/docs/0.25.0/api/search.html#facet-results
